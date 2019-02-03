@@ -19,8 +19,7 @@ class App extends React.Component {
   search(term) {
     console.log(`${term} was searched`);
     axios.post('/repos', {
-      firstName: 'Mehul',
-      lastName: 'Mandviya'
+      term: term
 
     })
       .then(function (response) {
